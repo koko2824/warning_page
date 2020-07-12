@@ -1,0 +1,49 @@
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(12, calc(100%/11));
+    grid-template-columns: repeat(7, calc(100%/7));
+}
+
+.upper{grid-row: 1 / 9;}
+.middle{grid-row: 9 / 10;}
+.lowerLeft{
+    grid-row: 10 / 12;
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(4, calc(100%/4));
+}
+.lowerRight{
+    grid-row: 10 / 12;
+    grid-column: 6 / 8;
+    display: grid;
+    grid-template-columns: repeat(6, calc(100%/6));
+}
+
+
+
+#box01{background-color: gray;}
+#box02{background-color: yellow;}
+#box03{background-color: aqua;}
+#box04{background-color: lime;}
+#box05{background-color: darkorchid;}
+#box06{background-color: red;}
+#box07{background-color: blue;}
+#box08{background-color: blue;}
+#box09{background-color: black;}
+#box10{background-color: darkorchid;}
+#box11{background-color: #161616;}
+#box12{background-color: aqua;}
+#box13{background-color: #161616;}
+#box14{background-color: gray;}
+
+#item01{background-color: darkblue;}
+#item02{background-color: white;}
+#item03{background-color: darkslateblue;}
+#item04{background-color: #161616;}
+#item05{background-color: #000000;}
+#item06{background-color: #161616;}
+#item07{background-color: #1d1d1d;}
+#item08{background-color: #161616; grid-column: 4/7;}
