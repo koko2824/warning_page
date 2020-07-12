@@ -1,5 +1,5 @@
 //spanタグ,time部分の表示時間
-let time = 200;
+let time = 30;
 function countdown() {
     const timeDisplay = document.getElementById('time');
     timer = setInterval(() => {
