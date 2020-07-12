@@ -1,6 +1,3 @@
-// ブラウザバック禁止
-
-
 //spanタグ,time部分の表示時間
 let time = 200;
 function countdown() {
@@ -30,6 +27,9 @@ function timeup() {
 
 //Warningイベントスタートの関数
 function warningEvent() {
+    alert('このサイトはジョークサイトです。\n\
+このサイトは人の不安を煽るような内容や音声が流れます。\n\
+コンソールに quite() の入力でプログラムの停止ができます');
     playSound('./sound/voice.mp3');
     playSound('./sound/error1.mp3');
     countdown();
@@ -37,7 +37,7 @@ function warningEvent() {
 };
 
 //イベント停止用
-function quite(){
+function quite() {
     clearInterval(timer);
     console.log('Stop Event!');
 };
