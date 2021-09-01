@@ -1,34 +1,18 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>警告</title>
-    <!-- materializeのインポート -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Material Iconsのインポート -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注意</title>
 </head>
-<style>
-
-</style>
-
-<body class="red">
-    <div id="warningPage">
-        <div class="container white-text">
-            <h1><i class="large material-icons">warning</i></h1>
-            <h3>あなたの端末がウイルスに感染しています</h3>
-            <p class="flow-text">このまま放置しておくと端末がロックされ使用不可になる可能性があります</p>
-            <p class="flow-text">残り時間内に下記リンクから対応してください</p>
-            <h2>残り時間: <span id="time"></span>秒</h2>
-            <a class="btn btn-large" href="./second.html">直ちに対応を開始する</a>
-            <a id="second" style="visibility: hidden;" href="./second.html"></a>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./script/index.js"></script>
+<body>
+  
+  <script>
+    if(!alert(`⚠︎注意⚠︎\nこのサイトの内容は全て架空のものとなっています。\nこのサイトには人の不安を煽るような内容が含まれています。`)) {
+      console.log('画面遷移')
+      window.location.href = './first.html'
+    }
+  </script>
 </body>
-
 </html>

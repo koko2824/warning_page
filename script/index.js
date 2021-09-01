@@ -27,9 +27,6 @@ function timeup() {
 
 //Warningイベントスタートの関数
 function warningEvent() {
-    alert('このサイトはジョークサイトです。\n\
-このサイトは人の不安を煽るような内容や音声が流れます。\n\
-コンソールに quite() の入力でプログラムの停止ができます');
     playSound('./sound/voice.mp3');
     playSound('./sound/error1.mp3');
     countdown();
